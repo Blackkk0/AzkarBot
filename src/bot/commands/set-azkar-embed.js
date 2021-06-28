@@ -36,7 +36,7 @@ module.exports = {
                   }
                 );
                 message.channel.send(
-                  "**:white_check_mark: | تم تغير وضع نشر الأزكار من رساءل عاديه ل رساءل ايمبد**"
+                  "**:white_check_mark: | The situation of spreading the buttons has changed from normal to normal.**"
                 );
               }
               if (status == "on") {
@@ -49,7 +49,7 @@ module.exports = {
                   }
                 );
                 message.channel.send(
-                  "**:white_check_mark: | تم تغير وضع نشر الأزكار من رساءل ايمبد ل رساءل عاديه**"
+                  "**:white_check_mark: | The situation of spreading the buttons has changed from a normal person to a normal person.**"
                 );
               }
             } catch (err) {}
