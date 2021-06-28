@@ -38,7 +38,7 @@ module.exports = {
 
 **Quran radio**
 > 🕌 \`${prefix}set-quran-channel\` **To determine the rum of the Quran Radio**
-> 🕌 \`${prefix}set-quran-toggle\` **To stop and operate the Quran Radio System.**
+> 🕌 \`${prefix}set-quran-toggle <on/off>\` **To stop and operate the Quran Radio System.**
 > 🕌 \`${prefix}quran\` **To run certain images in the Quran.**
 
 **Bot prefix server**: \`${prefix}\`
