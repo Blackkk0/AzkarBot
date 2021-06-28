@@ -3,7 +3,7 @@ const quickdb = require("quick.db");
 
 module.exports = {
   name: "help",
-  cooldown: 7,
+  cooldown: 2,
   run: async (client, message) => {
     var prefix = quickdb.fetch(`Prefix_${message.guild.id}`);
     if (prefix == null)
@@ -42,8 +42,8 @@ module.exports = {
 
 **Bot prefix server**: \`${prefix}\`
 
-**روابط تابعة للبوت:**
-**[سيرفر الدعم الفني](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [الموقع الخاص بالبوت](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [التصويت للبوت](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [اضافة البوت](https://www.youtube.com/watch?v=BThsyooJOj4)**`)
+`)
+
       // .addFields(
       //   { name: `> ${prefix}help`, value: "**`للحصول على قاءمة السماعده`**", inline: false },
       //   { name: `> ${prefix}support`, value: "**`للحصول على روابط مساعدة البوت`**", inline: false },
