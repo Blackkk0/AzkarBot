@@ -26,6 +26,7 @@ module.exports = {
 **Info**
 > 🕌 \`${prefix}help\` **To get the sky.**
 > 🕌 \`${prefix}ping\` **To get a result with ping bot.**
+> 🕌 \`${preix}set-prefix\` **To change the prefix.**
 
 **Zkr**
 > 🕌 \`${prefix}set-azkar-channel\` **To determine the rum spreading the thoughts.**
