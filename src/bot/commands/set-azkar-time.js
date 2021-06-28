@@ -41,7 +41,7 @@ module.exports = {
       };
       connectToMongoDB();
       message.channel.send(
-        "**:white_check_mark: | تم تغير وقت نشر الأذكار لـ `" +
+        "**:white_check_mark: | The time for publishing the ideas has changed to `" +
           args[1] +
           "`**"
       );
