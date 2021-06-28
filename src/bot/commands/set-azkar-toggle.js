@@ -34,7 +34,7 @@ module.exports = {
                 }
               );
               message.channel.send(
-                "**:white_check_mark: | تم تفعيل ارسال الأزكار**"
+                "**:white_check_mark: | The message has been activated.**"
               );
             }
             if (status == "on") {
@@ -47,7 +47,7 @@ module.exports = {
                 }
               );
               message.channel.send(
-                "**:white_check_mark: | تم ايقاف ارسال الأزكار**"
+                "**:white_check_mark: | The azkar transmission has been suspended.**"
               );
             }
           }, 500);
