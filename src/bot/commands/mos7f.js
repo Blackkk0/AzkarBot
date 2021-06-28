@@ -3,8 +3,7 @@ const chalk = require("chalk");
 
 module.exports = {
   name: "mos7f",
-  cooldown: 10,
-  aliases: ["mohf", "مصحف", "قرءان", "المصحف"],
+  cooldown: 2,
 
   run: async function(client, message) {
     var pages = require("../../db/list/mos7f");
@@ -18,12 +17,12 @@ module.exports = {
       )
       .setImage(pages[page - 1]);
     message.channel.send({ embed: embed }).then(msg => {
-      msg.react("⬅");
-      msg.react("➡").then(() => {
+      msg.react("⬅️");
+      msg.react("➡️").then(() => {
         let backwardsFilter = (reaction, user) =>
-          reaction.emoji.name === "⬅" && user.id === message.author.id;
+          reaction.emoji.name === "⬅️" && user.id === message.author.id;
         let forwardsFilter = (reaction, user) =>
-          reaction.emoji.name === "➡" && user.id === message.author.id;
+          reaction.emoji.name === "➡️" && user.id === message.author.id;
         let backwards = msg.createReactionCollector(backwardsFilter, {
           time: 0
         });
