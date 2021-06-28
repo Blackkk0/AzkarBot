@@ -15,7 +15,7 @@ module.exports = {
       message.guild.channels.cache.find(c => c.name == args[1]);
     if (!channel)
       return message.channel.send(
-        "**:x: | يرجى كتابة اسم او اي دي الغرفه الصوتيه المراد اذاعة القرءان الكريم فيها**"
+        "**:x: | Please write down the name or any of the audio room to be broadcast in the Quran**"
       );
     if (channel) {
       const connectToMongoDB = async () => {
@@ -56,7 +56,7 @@ module.exports = {
         connect.play(ytdl("https://www.youtube.com/watch?v=IvsBHohJvNY"));
       }
       message.channel.send(
-        "**:white_check_mark: | تم نقل روم أذاعة القرءان الكريم ل `" +
+        "**:white_check_mark: | Rom was transferred to the Holy Quran radio station to `" +
           channel.name +
           "`**"
       );
