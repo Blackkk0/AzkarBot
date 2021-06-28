@@ -13,12 +13,12 @@ module.exports = {
     if (!args) {
       quickdb.set(`Prefix_${message.guild.id}`, require('../../config/bot').prefix);
       message.channel.send(
-        "**:white_check_mark: | تمت أعادة برفكس البوت الى البرفكس الأساسي**"
+        "**:white_check_mark: | The Botox has been returned to the primary perfix.**"
       );
     } else if (args) {
       quickdb.set(`Prefix_${message.guild.id}`, args);
       message.channel.send(
-        `**:white_check_mark: | ${args} تم تغير البرفكس لـ**`
+        `**:white_check_mark: | ${args} The Perfex has been changed to**`
       );
     }
   }
