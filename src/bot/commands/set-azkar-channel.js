@@ -52,7 +52,7 @@ module.exports = {
       };
       connectToMongoDB();
       message.channel.send(
-        "**:white_check_mark: | تم نقل روم نشر الأزكار ل `" +
+        "**:white_check_mark: | Rom was moved to spread the azkar to `" +
           channel.name +
           "`**"
       );
