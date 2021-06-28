@@ -4,11 +4,11 @@ const ytdl = require("ytdl-core");
 module.exports = {
   name: "quran",
   cooldown: 7,
-  aliases: ["شغل", "play"],
+  aliases: ["play"],
   run: async (client, message) => {
     if (!message.member.voice.channel)
       return message.channel.send(
-        "**:x: | عليك أن تكون في قناه صوتيه لأستخدام هذا الأمر**"
+        "**:x: | You have to be on a voice channel to use this.**"
       );
     message.channel
       .send(
@@ -17,7 +17,7 @@ module.exports = {
             "https://e7.pngegg.com/pngimages/314/453/png-clipart-online-quran-project-the-holy-qur-an-text-translation-and-commentary-islam-arabic-calligraphy-attend-class-class-begins-emblem-logo-thumbnail.png"
           )
           .setAuthor(
-            "مشغل القرءان",
+            "The Horn Operator",
             "https://e7.pngegg.com/pngimages/314/453/png-clipart-online-quran-project-the-holy-qur-an-text-translation-and-commentary-islam-arabic-calligraphy-attend-class-class-begins-emblem-logo-thumbnail.png"
           )
           .setColor(0x2f3136)
@@ -101,7 +101,7 @@ module.exports = {
               );
               message.react("✅");
             } else {
-              message.channel.send("**:x: | هذا الأختيار خاطأ**");
+              message.channel.send("**:x: | That's a wrong choice.**");
             }
           });
       });
