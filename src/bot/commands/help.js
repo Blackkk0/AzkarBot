@@ -4,7 +4,6 @@ const quickdb = require("quick.db");
 module.exports = {
   name: "help",
   cooldown: 7,
-  aliases: ["مساعده"],
   run: async (client, message) => {
     var prefix = quickdb.fetch(`Prefix_${message.guild.id}`);
     if (prefix == null)
@@ -15,8 +14,8 @@ module.exports = {
     message.channel.send(
       new MessageEmbed()
         .setAuthor(
-          "قائمة المساعده 🕌",
-          "https://athkarapp.com/images/athkarLogo.png"
+          "help menu 🕌",
+          ""
         )
         .setThumbnail(client.user.avatarURL({ dynaimc: true }))
         .setColor(0x2f3136)
@@ -24,24 +23,24 @@ module.exports = {
           client.user.username,
           client.user.avatarURL({ dynaimc: true })
         ).setDescription(`
-**أوامر عامه**
-> 🕌 \`${prefix}help\` **للحصول على قاءمة السماعده**
-> 🕌 \`${prefix}ping\` **للحصول على نتيجه ببينج البوت**
+**Info**
+> 🕌 \`${prefix}help\` **To get the sky.**
+> 🕌 \`${prefix}ping\` **To get a result with ping bot.**
 
-**أوامر الأذكار**
-> 🕌 \`${prefix}set-azkar-channel\` **لتحديد روم نشر الأذكار**
-> 🕌 \`${prefix}set-azkar-embed\` **للتغير ما بين نظام نشر الأذكار من رساءل عاديه ل رساءل ايمبد**
-> 🕌 \`${prefix}set-azkar-toggle\` **لايقاف و تشغيل نظام أرسال الأذكار**
-> 🕌 \`${prefix}morning\` **للحصول على اذكار الصباح**
-> 🕌 \`${prefix}evening\` **للحصول على اذكار المساء**
-> 🕌 \`${prefix}mos7f\` **للحصول على صفحات المصحف الكريم**
+**Zkr**
+> 🕌 \`${prefix}set-azkar-channel\` **To determine the rum spreading the thoughts.**
+> 🕌 \`${prefix}set-azkar-embed\` **To change between the system of spreading ideas from a normal president to a person.**
+> 🕌 \`${prefix}set-azkar-toggle\` **To stop and operate the transmission system.**
+> 🕌 \`${prefix}morning\` **To get morning remembrances.**
+> 🕌 \`${prefix}evening\` **To get the remembrance of haven.**
+> 🕌 \`${prefix}mos7f\` **For the pages of the Holy Quran.**
 
-**أوامر القرءان**
-> 🕌 \`${prefix}set-quran-channel\` **لتحديد روم اذاعة القرءان الكريم**
-> 🕌 \`${prefix}set-quran-toggle\` **لاقاف و تشغيل نظام أذاعة القرءان الكريم**
-> 🕌 \`${prefix}quran\` **لتشغيل صور معينه في القرءان الكريم**
+**Quran radio**
+> 🕌 \`${prefix}set-quran-channel\` **To determine the rum of the Quran Radio**
+> 🕌 \`${prefix}set-quran-toggle\` **To stop and operate the Quran Radio System.**
+> 🕌 \`${prefix}quran\` **To run certain images in the Quran.**
 
-**برفكس السيرفر**: \`${prefix}\`
+**Bot prefix server**: \`${prefix}\`
 
 **روابط تابعة للبوت:**
 **[سيرفر الدعم الفني](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [الموقع الخاص بالبوت](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [التصويت للبوت](https://www.youtube.com/watch?v=BThsyooJOj4) \`|\` [اضافة البوت](https://www.youtube.com/watch?v=BThsyooJOj4)**`)
