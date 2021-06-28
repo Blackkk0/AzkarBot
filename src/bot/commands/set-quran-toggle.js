@@ -35,7 +35,7 @@ module.exports = {
                 }
               );
               message.channel.send(
-                "**:white_check_mark: | تم تفعيل ازاعة القرءان الكريم**"
+                "**:white_check_mark: | The holy Quran has been activated.**"
               );
             }
             if (status == "on") {
@@ -48,12 +48,12 @@ module.exports = {
                 }
               );
               message.channel.send(
-                "**:white_check_mark: | تم ايقاف ازاعة القرءان الكريم**"
+                "**:white_check_mark: | The spread of the Holy Quran has been stopped.**"
               );
             }
           }, 500);
           } catch (err) {
-            message.channel.send("**:x: | يرجى المحاوله مره اخرى بعد ثوان**")
+            message.channel.send("**:x: | Please try again in seconds.**")
           }
         } finally {
           mongosse.connection.close();
