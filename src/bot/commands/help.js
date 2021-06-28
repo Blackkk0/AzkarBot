@@ -30,7 +30,7 @@ module.exports = {
 **Zkr**
 > 🕌 \`${prefix}set-azkar-channel\` **To determine the rum spreading the thoughts.**
 > 🕌 \`${prefix}set-azkar-embed <on/off>\` **To change between the system of spreading ideas from a normal president to a person.**
-> 🕌 \`${prefix}set-azkar-toggle\` **To stop and operate the transmission system.**
+> 🕌 \`${prefix}set-azkar-toggle <on/off>\` **To stop and operate the transmission system.**
 > 🕌 \`${prefix}morning\` **To get morning remembrances.**
 > 🕌 \`${prefix}evening\` **To get the remembrance of haven.**
 > 🕌 \`${prefix}mos7f\` **For the pages of the Holy Quran.**
