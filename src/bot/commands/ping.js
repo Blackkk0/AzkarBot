@@ -2,8 +2,7 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "ping",
-  cooldown: 7,
-  aliases: ["ping", "بينج"],
+  cooldown: 2,
   run: async (client, message) => {
     var states = "🟢 Excellent";
     var states2 = "🟢 Excellent";
